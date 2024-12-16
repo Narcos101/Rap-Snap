@@ -1,0 +1,211 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: url('./assets/images/background.jpg') center/cover no-repeat fixed; /* Center the background */
+  background-color: #121212; /* Fallback dark background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Prevent scroll */
+}
+
+/* Main Title */
+h1 {
+  font-size: 3rem;
+  color: #ff66cc; /* Neon Pink */
+  text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff33aa; /* Neon Glow */
+  margin-bottom: 10px;
+}
+
+/* Username Section */
+h3 {
+  font-size: 1.5rem;
+  color: #ffcc00; /* Neon Yellow */
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+#username {
+  color: #00e6e6; /* Neon Cyan */
+  font-weight: bold;
+  text-shadow: 0 0 10px #00e6e6;
+}
+
+/* Default Text */
+#default-text-span {
+  display: block;
+  margin: 20px auto;
+}
+
+#default-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #999999;
+}
+
+/* Input Container */
+.input-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#rhymeInput {
+  width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff66cc;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 10px #ff66cc;
+}
+
+#rhymeInput::placeholder {
+  color: #bbbbbb;
+}
+
+#send-message {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff66cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ff66cc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#send-message:hover {
+  background-color: #ff33aa;
+  transform: scale(1.05);
+}
+
+/* Timer Display */
+#timerDisplay {
+  font-size: 2rem;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+  margin: 20px 0;
+}
+
+/* Game Over Message */
+#gameOverMessage {
+  display: none; /* Hidden by default */
+  font-size: 2rem;
+  color: #ff3333;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff3333;
+  margin-top: 20px;
+}
+
+/* Rhyme Response */
+#rhymeResponse {
+  font-size: 1.3rem;
+  margin: 20px auto;
+  color: #00e6e6; /* Neon Cyan */
+  text-shadow: 0 0 10px #00e6e6;
+}
+
+/* User Score */
+#display-user-score {
+  font-size: 1.5rem;
+  color: #ffcc00; /* Neon Yellow */
+  margin-top: 20px;
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+/* Modal Background */
+#instructionsModal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Ensures it's on top of other elements */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent overlay */
+  backdrop-filter: blur(8px); /* Adds a blur effect */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(30, 30, 30, 0.95); /* Almost black with slight transparency */
+  color: #fff; /* White text for contrast */
+  margin: 10% auto; /* Center the modal vertically and horizontally */
+  padding: 20px;
+  border: 2px solid #ff66cc; /* Neon pink border */
+  border-radius: 10px;
+  width: 80%; /* Responsive width */
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 15px #ff66cc; /* Neon pink glow effect */
+  animation: modalFadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Modal Heading */
+.modal-content h2 {
+  color: #ff66cc; /* Neon pink heading */
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #ff66cc; /* Glow effect */
+}
+
+/* Modal Paragraph and List */
+.modal-content p,
+.modal-content ul {
+  font-size: 1.1rem;
+  color: #f1f1f1; /* Light text for readability */
+  line-height: 1.6;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content li::before {
+  content: "▶"; /* Custom bullet */
+  color: #ffcc00; /* Neon yellow bullet points */
+  margin-right: 8px;
+}
+
+/* Play Button */
+.close {
+  padding: 12px 20px;
+  background-color: #ff66cc; /* Neon pink button */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close:hover {
+  background-color: #ff00ff; /* Neon purple on hover */
+  transform: scale(1.05); /* Slight scale-up effect */
+}
+
+/* Fade-in Animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

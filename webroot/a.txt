@@ -1,0 +1,43 @@
+
+#instructionsModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: bottom;
+    margin-bottom:10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #timerDisplay {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+
+  #gameOverMessage {
+    display: none;
+    font-size: 1.5rem;
+    color: red;
+  }

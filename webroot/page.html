@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="UTF-8" />
+    <title>Rap Snap Round #1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rap Snap</h1>
+    <h3>Your username is <span id="username">Guest</span></h3>
+    <span id="default-text-span"><h6 id="default-text"></h6></span>
+    <div class="input-container">
+      <input type="text" id="rhymeInput" placeholder="Enter a rhyme">
+      <button id="send-message" type="submit">Send Message</button>
+    </div>
+
+    <p id="timerDisplay">01:00</p>
+
+    <p id="gameOverMessage">Game Over!</p>
+
+    <p id="rhymeResponse">This is the original text.</p>
+
+    <p id="display-user-score">Score: 0</p>
+
+    <!-- Modal -->
+    
+    <div id="instructionsModal">
+      <div class="modal-content">
+        <!-- <span class="close">&times;</span> -->
+        <h2>Game Instructions</h2>
+        <p>Here are the instructions for the game...</p>
+        <ul>
+          <li>How to play step 1</li>
+          <li>How to play step 2</li>
+          <li>How to play step 3</li>
+        </ul>
+        <button class="close">Play the Game</button>
+      </div>
+    </div>
+  
+  
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

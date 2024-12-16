@@ -1,0 +1,73 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: url('./assets/images/background.jpg') center/cover no-repeat fixed; /* Use the same background */
+  background-color: #121212; /* Dark fallback color */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Game Over Title */
+h1 {
+  font-size: 4rem;
+  color: #ff3333; /* Neon Red */
+  text-shadow: 
+    0 0 5px #ff00ff, 
+    0 0 10px #ff00ff, 
+    0 0 15px #ff00ff, 
+    0 0 20px #ff00ff, 
+    0 0 35px #d400d4, 
+    0 0 40px #d400d4, 
+    0 0 50px #d400d4; 
+  margin-bottom: 20px;
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+/* Final and High Score Text */
+#finalScore, #highScore {
+  font-size: 1.8rem;
+  color: #00e6e6; /* Neon Cyan */
+  text-shadow: 0 0 8px #00e6e6, 0 0 15px #00cccc;
+  margin: 10px 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #finalScore, #highScore {
+    font-size: 1.5rem;
+  }
+}
+
+
+@keyframes pulseGlowPink {
+  from {
+    text-shadow: 
+      0 0 5px #ff00ff, 
+      0 0 10px #ff00ff, 
+      0 0 15px #ff00ff, 
+      0 0 20px #d400d4;
+  }
+  to {
+    text-shadow: 
+      0 0 10px #ff00ff, 
+      0 0 20px #ff00ff, 
+      0 0 30px #d400d4, 
+      0 0 40px #d400d4;
+  }
+}
