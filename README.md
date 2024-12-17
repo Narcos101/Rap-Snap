@@ -1,10 +1,10 @@
 ![image](https://github.com/user-attachments/assets/57cc4103-dcae-4f32-93bc-695820e82a33)
 
 
-🎤 Freestyle Rhyme Game
+🎤 The Freestyle Rhyme Game
 
 ## Overview  
-Welcome to **Freestyle Rhyme Game**! It's a dynamic, interactive game designed for rap and rhyme lovers. Drop your best rhymes, earn points, and keep the rhythm alive. This game challenges users to think fast, stay creative, and engage with unique rhyme prompts.
+Welcome to **Rap Snap**! It's a dynamic, interactive game designed for rap and rhyme lovers. Drop your best rhymes, earn points, and keep the rhythm alive. This game challenges users to think fast, stay creative, and engage with unique rhyme prompts.
 
 Whether you’re a rap battle champ or a casual rhymer, this game is your playground to test your freestyle skills.
 
